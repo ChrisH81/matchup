@@ -1,7 +1,18 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+andrei = User.create(email: "andrei.burichita@gmail.com", password: "abcd1234")
+adrianna = User.create(email: "industrialdog@gmail.com", password: "abcd1234")
+ann = User.create(email: "annmagdalen@hotmail.com", password: "abcd1234")
+claudia = User.create(email: "sally_claudia@hotmail.com", password: "abcd1234")
+elizabeth = User.create(email: "elizabethprins@gmail.com", password: "abcd1234")
+kate = User.create(email: "fanka@bk.ru", password: "abcd1234")
+han = User.create(email: "hankortekaas@gmail.com", password: "abcd1234")
+ilsmarie = User.create(email: "ilsmarie.presilia@icloud.com", password: "abcd1234")
+jesse = User.create(email: "jesseborm@gmail.com", password: "abcd1234")
+job = User.create(email: "jobvanduuren@gmail.com", password: "abcd1234")
+maressa = User.create(email: "maressa.joseph@gmail.com", password: "abcd1234")
+jeroen = User.create(email: "jeroen.rodenburg@outlook.com", password: "abcd1234")
+oliver = User.create(email: "andrei.burichita@gmail.com", password: "abcd1234")
+bram = User.create(email: "andrei.burichita@gmail.com", password: "abcd1234")
+steve = User.create(email: "andrei.burichita@gmail.com", password: "abcd1234")
+omar = User.create(email: "andrei.burichita@gmail.com", password: "abcd1234")
+tim = User.create(email: "andrei.burichita@gmail.com", password: "abcd1234")
+chris = User.create(email: "chrishurst1981@icloud.com", password: "abcd1234")
