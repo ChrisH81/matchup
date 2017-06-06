@@ -14,7 +14,11 @@
         <% if @validatable %>
           <em>(<%= @minimum_password_length %> characters minimum)</em>
         <% end %><br />
-        <%= f.password_field :password, :class => 'form-control', :placeholder => 'Password',  autocomplete: "off" %>
+        <%= f.password_field :password, :class => 'form-control', :placeholder => 'Password',  autocomplete: "off" %><br />
+      </div>
+
+      <div class="form-group">
+        <%= f.text_field :name, :placeholder => "Name", :class => 'form-control' %>
       </div>
 
       <div class="actions">
