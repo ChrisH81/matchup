@@ -1,14 +1,5 @@
-<% provide(:title, 'All users') %>
-<h1>All users</h1>
-
-<div class="container">
-<ol class="users">
-  <% @users.each do |user| %>
-  <li>
-    <%= link_to user.name %>
-  </li>
-
-  <% end %>
-</ol>
-</div>
+<div>
 <%= link_to "View Calendar", calendar_show_path, class: "btn btn-info" %>
+<hr>
+<%= render partial: "pairs" %>
+</div>

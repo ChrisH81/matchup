@@ -1,7 +1,12 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>Welcome</h1>
 
 
 <% if current_user.try(:admin?) %>
+<h3>Admin<h3>
 <%= render partial: "panel" %>
+<% end %>
+
+<% if current_user.present? && !current_user.admin? %>
+ <h3> Today's pairs are: </h3>
+ <%= render partial: "pairs" %>
 <% end %>
