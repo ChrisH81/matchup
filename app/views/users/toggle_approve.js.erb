@@ -1,0 +1,7 @@
+$('#myonoffswitch')
+<% if @user.admin == true %>
+    $(".user-<%= @user.id %> > a").html('true').removeClass('btn-warning').addClass('btn-success')
+<% else %>
+    $(".user-<%= @user.id %> > a").html('false').removeClass('btn-success').addClass('btn-warning')
+<% end %>
+$("#user-status-<%= @user.id %>").html("<%= @user.admin %>")

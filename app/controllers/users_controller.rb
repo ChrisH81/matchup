@@ -3,6 +3,7 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
+
   end
 
   def show
@@ -40,6 +41,17 @@ class UsersController < ApplicationController
     User.find(params[:id]).destroy
     flash[:success] = "User deleted"
     redirect_to users_url
+  end
+
+  #CONTROLLER
+  def toggle_approve
+    @user = User.find(params[:id])
+    @user.toggle!(:admin)
+      respond_to do |format|
+      format.html { redirect_to request.referrer, notice: 'Admin status successfully changed.' }
+      format.json { head :no_content }
+      format.js   { render :layout => false }
+    end
   end
 
   private

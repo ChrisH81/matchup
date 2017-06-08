@@ -1,8 +1,13 @@
 <li>
+  <% @user %>
   <%= gravatar_for user, size: 100 %>
-  <%= link_to user.name, user %>
+  <td><%= user.name %></td>
   <% if current_user.admin %>
-  | <%= link_to "delete", user, method: :delete,
-                                data: { confirm: "You sure?" } %>
+    <%= link_to "delete", user, method: :delete,
+    data: { confirm: "You sure?" } %>
+    <td><%= user.admin %></td>
+    <%= link_to "approve", toggle_user_path(user.id), :method => :put, :id => "myonoffswitch" %>
+
+
 <% end %>
 </li>
