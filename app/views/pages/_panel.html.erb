@@ -7,8 +7,19 @@
   <li>
     <%= link_to user.name %>
   </li>
-
   <% end %>
 </ol>
 </div>
+
 <%= link_to "View Calendar", calendar_show_path, class: "btn btn-info" %>
+
+
+<%=
+students = students = %w(Maressa Bram Claudia Steve Ilsmarie Jeroen Jesse Han Ann Oliver Adrianna Omar Tim Job Elizabeth Kate Andrei Chris)
+teams = RoundRobinTournament.schedule(students)
+
+teams.each_with_index do |day, index|
+  day_teams = day.map { |team| "(#{team.first}, #{team.last})" }.join(", ")
+  puts "Day #{index + 1}: #{day_teams}"
+end
+%>

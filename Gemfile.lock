@@ -140,6 +140,7 @@ GEM
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
+    round_robin_tournament (0.0.1)
     rspec-core (3.6.0)
       rspec-support (~> 3.6.0)
     rspec-expectations (3.6.0)
@@ -215,6 +216,7 @@ DEPENDENCIES
   pg (~> 0.18)
   puma (~> 3.7)
   rails (~> 5.1.1)
+  round_robin_tournament
   rspec-rails (~> 3.5, >= 3.5.2)
   sass-rails (~> 5.0)
   spring

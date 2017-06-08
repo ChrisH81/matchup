@@ -42,6 +42,11 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
 
+  def create_pair
+    @users = User.all
+    @users.each.slice(2).to_a
+  end
+
   private
 
   def admin_user

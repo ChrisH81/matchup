@@ -4,7 +4,8 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
-
+# creating pairs 
+gem 'round_robin_tournament'
 # Use Devise for authentication
 gem 'devise', '~> 4.2'
 # Use Bootstrap for styling
